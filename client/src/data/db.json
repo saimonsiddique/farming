@@ -34,7 +34,29 @@
       "latitude": 23.7559471,
       "longitude": 90.3704466,
       "id": 5
+    },
+    {
+      "name": "Munshi",
+      "location": "Badiatola Bazar, Badiatola, Bangladesh",
+      "latitude": 23.1981111,
+      "longitude": 89.1476252,
+      "id": 6
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "projectName": "Test-1",
+      "projectDescription": "First test",
+      "projectStatus": "started",
+      "lands": ["Munshi"],
+      "id": 1
+    },
+    {
+      "projectName": "Agriculture",
+      "projectDescription": "Alu, tomato",
+      "projectStatus": "started",
+      "lands": ["Rupok", "sha-shak"],
+      "id": 2
+    }
+  ]
 }
