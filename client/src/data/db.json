@@ -1,0 +1,39 @@
+{
+  "lands": [
+    {
+      "name": "Hello",
+      "location": "Goodyear, AZ, USA",
+      "latitude": 33.4353394,
+      "longitude": -112.3576567,
+      "id": 1
+    },
+    {
+      "name": "sha-shak",
+      "location": "Uttara, Dhaka, Bangladesh",
+      "latitude": 23.8758547,
+      "longitude": 90.3795438,
+      "id": 2
+    },
+    {
+      "name": "Rupok",
+      "location": "Banasree Main Road, Dhaka, Bangladesh",
+      "latitude": 23.7634895,
+      "longitude": 90.4324448,
+      "id": 3
+    },
+    {
+      "name": "Imran hossain",
+      "location": "Malotinagar, Bogura, Bangladesh",
+      "latitude": 24.8399063,
+      "longitude": 89.38372849999999,
+      "id": 4
+    },
+    {
+      "name": "Zahidtwt",
+      "location": "Chad Uddan Urban Smum Anondo School, Road-8, Block-C, Chad Uddan Housing, Ward-33, Mohammadpur, Dhaka, Bangladesh",
+      "latitude": 23.7559471,
+      "longitude": 90.3704466,
+      "id": 5
+    }
+  ]
+}
