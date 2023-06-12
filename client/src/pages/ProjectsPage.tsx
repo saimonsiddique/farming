@@ -18,7 +18,7 @@ function ProjectsPage() {
   }, []);
 
   return (
-    <>
+    <div className="flex w-[80vw] justify-between">
       <div className="m-2 flex flex-col gap-3 overflow-y-scroll">
         {allProjects.map((project: any) => (
           <div
@@ -30,14 +30,14 @@ function ProjectsPage() {
         ))}
       </div>
       <div>
-        <Button onClick={handleOpen} variant="contained">
+        <Button onClick={handleOpen} variant="contained" sx={{ m: 2 }}>
           Add New Project
         </Button>
       </div>
       <div className="bg-white">
         <NewProjectForm open={open} handleClose={handleClose} />
       </div>
-    </>
+    </div>
   );
 }
 

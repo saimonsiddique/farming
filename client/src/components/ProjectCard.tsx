@@ -21,7 +21,9 @@ function ProjectCard({ project }: Props) {
         onClick={openModal}
       >
         <div className="flex justify-start">
-          <div className="text-2xl font-bold">{project.projectName}</div>
+          <div className="text-2xl font-bold capitalize">
+            {project.projectName}
+          </div>
         </div>
         <div className="flex gap-2">
           <span className="text-sm">Project Status: </span>

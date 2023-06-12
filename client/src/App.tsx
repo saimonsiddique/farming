@@ -1,17 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavigationBar from './components/NavigationBar';
-import Sidebar from './components/Sidebar';
-import Landingpage from './pages/Landingpage';
-import ProjectsPage from './pages/ProjectsPage';
-import LandsPage from './pages/LandsPage';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/NavigationBar";
+import Sidebar from "./components/Sidebar";
+import Landingpage from "./pages/Landingpage";
+import ProjectsPage from "./pages/ProjectsPage";
+import LandsPage from "./pages/LandsPage";
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
       <Routes>
-        <Route
+        {/* <Route
           path="/"
           element={
             <div className="App">
@@ -21,9 +21,9 @@ function App() {
               </div>
             </div>
           }
-        ></Route>
+        ></Route> */}
         <Route
-          path="/lands"
+          path="/"
           element={
             <div className="App">
               <div className="flex">
