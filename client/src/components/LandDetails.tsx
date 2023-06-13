@@ -23,7 +23,7 @@ function LandDetails({ modalRef, name, location, latitude, longitude }: Props) {
       <dialog ref={modalRef} className="modal">
         <form
           method="dialog"
-          className="modal-box h-[50vh] w-[50vw]  bg-purple-300 flex text-2xl items-center justify-center"
+          className="modal-box h-[50vh] w-[50vw] bg-purple-100 border-5 border-purple-300 flex text-2xl items-center justify-center"
         >
           <div className="flex flex-col gap-5 w-[100vw]">
             <p className="">Name: {name}</p>

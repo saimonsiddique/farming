@@ -1,15 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
-import Sidebar from "./components/Sidebar";
-import Landingpage from "./pages/Landingpage";
-import ProjectsPage from "./pages/ProjectsPage";
-import LandsPage from "./pages/LandsPage";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavigationBar from './components/NavigationBar';
+import Sidebar from './components/Sidebar';
+import Landingpage from './pages/Landingpage';
+import ProjectsPage from './pages/ProjectsPage';
+import LandsPage from './pages/LandsPage';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-      <NavigationBar />
+      <div className="">
+        <NavigationBar />
+      </div>
       <Routes>
         {/* <Route
           path="/"
@@ -26,9 +28,11 @@ function App() {
           path="/"
           element={
             <div className="App">
-              <div className="flex">
+              <div className="flex px-36  bg-purple-50">
                 <Sidebar />
-                <LandsPage />
+                <div className="px-2 pt-5">
+                  <LandsPage />
+                </div>
               </div>
             </div>
           }
@@ -46,13 +50,6 @@ function App() {
         ></Route>
       </Routes>
     </BrowserRouter>
-    // <div className="App">
-    //   <NavigationBar />
-    //   <div className="flex">
-    //     <Sidebar />
-    //     <Landingpage />
-    //   </div>
-    // </div>
   );
 }
 

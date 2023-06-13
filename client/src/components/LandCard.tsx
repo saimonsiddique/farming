@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import LandDetails from './LandDetails';
-
+import { GrLocation } from 'react-icons/gr';
 interface Props {
   name: string;
   location: string;
@@ -20,12 +20,16 @@ function LandCard({ name, location, latitude, longitude }: Props) {
   return (
     <div>
       <div
-        className="card h-full w-96 bg-purple-200 text-primary-content shadow-lg  hover:cursor-pointer"
+        className="card h-full w-96  text-primary-content shadow-sm border-2 border-purple-200  hover:cursor-pointer"
         onClick={openModal}
       >
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
-          <p>{location}</p>
+          <div className="flex items-center gap-1">
+            <GrLocation />
+            <p>{location}</p>
+          </div>
+
           <div className="card-actions justify-end">
             {/* <button className="btn">Buy Now</button> */}
           </div>

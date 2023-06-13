@@ -14,7 +14,7 @@ function MapboxMap({ markerCoordinates }: Props) {
       container: mapContainer.current!,
       style: 'mapbox://styles/mapbox/streets-v12',
       center: [90.2070356021948, 24.2250071131465], // starting position [lng, lat]
-      zoom: 1.8, // starting zoom
+      zoom: 1.6, // starting zoom
     });
     markerCoordinates.forEach((coordinate: any) => {
       new mapboxgl.Marker().setLngLat(coordinate).addTo(map);

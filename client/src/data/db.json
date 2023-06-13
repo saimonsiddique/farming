@@ -28,13 +28,7 @@
       "longitude": 89.38372849999999,
       "id": 4
     },
-    {
-      "name": "Zahidtwt",
-      "location": "Chad Uddan Urban Smum Anondo School, Road-8, Block-C, Chad Uddan Housing, Ward-33, Mohammadpur, Dhaka, Bangladesh",
-      "latitude": 23.7559471,
-      "longitude": 90.3704466,
-      "id": 5
-    },
+
     {
       "name": "Munshi",
       "location": "Badiatola Bazar, Badiatola, Bangladesh",
@@ -44,34 +38,7 @@
     }
   ],
   "projects": [
-    {
-      "projectName": "Test-1",
-      "projectDescription": "First test",
-      "projectStatus": "started",
-      "lands": "Munshi",
-      "id": 1
-    },
-    {
-      "projectName": "Agriculture",
-      "projectDescription": "Alu, tomato",
-      "projectStatus": "started",
-      "lands": "sha-shak",
-      "id": 2
-    },
-    {
-      "projectName": "horticulture",
-      "projectDescription": "horticulture is the science and art of the development, sustainable production, marketing and use of high-value, intensively cultivated food and ornamental plants. ",
-      "projectStatus": "in progress",
-      "lands": "Munshi",
-      "id": 3
-    },
-    {
-      "projectName": "harvest",
-      "projectDescription": "harvesting is the process of gathering a ripe crop from the fields. reaping is the cutting of grain or pulse for harvest, typically using a scythe, sickle, or reaper. on smaller farms with minimal mechanization, harvesting is the most labor-intensive activity of the growing season",
-      "projectStatus": "finished",
-      "lands": "Munshi",
-      "id": 4
-    },
+   
     {
       "projectName": "harvest",
       "projectDescription": "harvesting is the process of gathering a ripe crop from the fields. reaping is the cutting of grain or pulse for harvest, typically using a scythe, sickle, or reaper. on smaller farms with minimal mechanization, harvesting is the most labor-intensive activity of the growing season",
@@ -134,13 +101,6 @@
       "projectStatus": "finished",
       "lands": "Munshi",
       "id": 13
-    },
-    {
-      "projectName": "",
-      "projectDescription": "",
-      "projectStatus": "",
-      "lands": "",
-      "id": 14
     }
   ]
 }
