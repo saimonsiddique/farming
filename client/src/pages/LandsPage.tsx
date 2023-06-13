@@ -54,7 +54,7 @@ function LandsPage() {
         </div>
 
         <div className="flex flex-col gap-8">
-          <div className="w-[52vw] h-[76vh] ">
+          <div className="w-[36vw] h-[70vh] ">
             <MapboxMap markerCoordinates={markerCoordinates} />
           </div>
           <div className="tailwind_modal">

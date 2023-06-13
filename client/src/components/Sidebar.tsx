@@ -1,8 +1,9 @@
-import React from "react";
-import { AiOutlineHome } from "react-icons/ai";
-import { SlEnvolope } from "react-icons/sl";
-import { RiTodoLine } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { AiOutlineHome } from 'react-icons/ai';
+import { SlEnvolope } from 'react-icons/sl';
+import { RiTodoLine } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
+import { BiMap } from 'react-icons/bi';
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -11,14 +12,14 @@ function Sidebar() {
   //   navigate('/');
   // }
   function handleLandsClick() {
-    navigate("/lands");
+    navigate('/');
   }
   function handleProjectsClick() {
-    navigate("/projects");
+    navigate('/projects');
   }
   return (
     <div>
-      <div className="h-[90vh]  w-[20vw] border-r-2 border-gray-200">
+      <div className="h-[90vh]  w-[15vw] border-r-2 border-gray-200">
         <div className="flex flex-col text-xl  pt-5">
           {/* <button
             className=" rounded-lg bg-transparent border-none text-left flex items-center gap-2 hover:bg-slate-200 p-5"
@@ -34,7 +35,7 @@ function Sidebar() {
             onClick={handleLandsClick}
           >
             <div>
-              <SlEnvolope />
+              <BiMap />
             </div>
             <div>Lands</div>
           </button>
