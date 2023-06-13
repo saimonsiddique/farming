@@ -16,10 +16,7 @@ function ProjectCard({ project }: Props) {
 
   return (
     <div>
-      <div
-        className="flex flex-col rounded-lg shadow-lg p-5"
-        onClick={openModal}
-      >
+      <div className="flex flex-col rounded-lg p-3" onClick={openModal}>
         <div className="flex justify-start">
           <div className="text-2xl font-bold capitalize">
             {project.projectName}

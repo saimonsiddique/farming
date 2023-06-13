@@ -1,15 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import NewProjectForm from "../components/NewProjectForm";
-import { Modal, Button } from "@mui/material";
 import axios from "axios";
 import ProjectCard from "../components/ProjectCard";
 
 function ProjectsPage() {
-  const [open, setOpen] = useState<boolean>(false);
   const [allProjects, setAllProjects] = useState<any[]>([]);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const modalRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
     axios.get("http://localhost:8080/projects").then((res) => {
@@ -17,9 +13,15 @@ function ProjectsPage() {
     });
   }, []);
 
+  const openModal = () => {
+    if (modalRef.current) {
+      modalRef.current.showModal();
+    }
+  };
+
   return (
     <div className="flex w-[80vw] justify-between">
-      <div className="m-2 flex flex-col gap-3 overflow-y-scroll">
+      <div className="m-2 flex flex-col gap-3 h-[90vh] overflow-y-scroll">
         {allProjects.map((project: any) => (
           <div
             key={project?.id}
@@ -30,12 +32,10 @@ function ProjectsPage() {
         ))}
       </div>
       <div>
-        <Button onClick={handleOpen} variant="contained" sx={{ m: 2 }}>
+        <button className="btn m-2 btn-info rounded-lg" onClick={openModal}>
           Add New Project
-        </Button>
-      </div>
-      <div className="bg-white">
-        <NewProjectForm open={open} handleClose={handleClose} />
+        </button>
+        <NewProjectForm modalRef={modalRef} setAllProjects={setAllProjects} />
       </div>
     </div>
   );

@@ -39,9 +39,7 @@ function ProjectDetails({
             </p>
             <p>
               <span className="text-md font-semibold">Lands:</span>{" "}
-              {lands.map((land, i) => (
-                <span key={i}>{land},</span>
-              ))}
+              <span>{lands}</span>
             </p>
           </div>
         </form>

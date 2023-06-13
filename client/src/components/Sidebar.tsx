@@ -11,7 +11,7 @@ function Sidebar() {
   //   navigate('/');
   // }
   function handleLandsClick() {
-    navigate("/lands");
+    navigate("/");
   }
   function handleProjectsClick() {
     navigate("/projects");
