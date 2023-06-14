@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import LandDetails from './LandDetails';
-import { GrLocation } from 'react-icons/gr';
+import React, { useRef } from "react";
+import LandDetails from "./LandDetails";
+import { GrLocation } from "react-icons/gr";
 interface Props {
   name: string;
   location: string;
@@ -28,10 +28,6 @@ function LandCard({ name, location, latitude, longitude }: Props) {
           <div className="flex items-center gap-1">
             <GrLocation />
             <p>{location}</p>
-          </div>
-
-          <div className="card-actions justify-end">
-            {/* <button className="btn">Buy Now</button> */}
           </div>
         </div>
       </div>

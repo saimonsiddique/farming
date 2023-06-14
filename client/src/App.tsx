@@ -1,10 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavigationBar from './components/NavigationBar';
-import Sidebar from './components/Sidebar';
-import Landingpage from './pages/Landingpage';
-import ProjectsPage from './pages/ProjectsPage';
-import LandsPage from './pages/LandsPage';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/NavigationBar";
+import Sidebar from "./components/Sidebar";
+import ProjectsPage from "./pages/ProjectsPage";
+import LandsPage from "./pages/LandsPage";
+import "./App.css";
 
 function App() {
   return (
@@ -13,17 +12,6 @@ function App() {
         <NavigationBar />
       </div>
       <Routes>
-        {/* <Route
-          path="/"
-          element={
-            <div className="App">
-              <div className="flex">
-                <Sidebar />
-                <Landingpage />
-              </div>
-            </div>
-          }
-        ></Route> */}
         <Route
           path="/"
           element={
@@ -41,7 +29,7 @@ function App() {
           path="/projects"
           element={
             <div className="App">
-              <div className="flex">
+              <div className="flex px-36  bg-purple-50">
                 <Sidebar />
                 <ProjectsPage />
               </div>

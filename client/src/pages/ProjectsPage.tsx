@@ -25,7 +25,7 @@ function ProjectsPage() {
         {allProjects.map((project: any) => (
           <div
             key={project?.id}
-            className="rounded-md bg-[#E9D5FF] hover:cursor-pointer"
+            className="rounded-md bg-[#ffffff] hover:cursor-pointer"
           >
             <ProjectCard key={project?.id} project={project} />
           </div>

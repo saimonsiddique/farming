@@ -16,16 +16,17 @@ function ProjectCard({ project }: Props) {
 
   return (
     <div>
-      <div className="flex flex-col rounded-lg p-3" onClick={openModal}>
-        <div className="flex justify-start">
-          <div className="text-2xl font-bold capitalize">
-            {project.projectName}
-          </div>
-        </div>
-        <div className="flex gap-2">
-          <span className="text-sm">Project Status: </span>
-          <span
-            className={`text-sm capitalize
+      <div
+        className="card h-full w-96  text-primary-content shadow-sm border-2 border-purple-200  hover:cursor-pointer"
+        onClick={openModal}
+      >
+        <div className="card-body">
+          <div className="card-title uppercase">{project.projectName}</div>
+
+          <div className="flex items-center gap-1">
+            <span className="text-sm">Project Status: </span>
+            <p
+              className={`text-sm capitalize
           ${
             project.projectStatus === "started"
               ? "text-red-500"
@@ -35,9 +36,10 @@ function ProjectCard({ project }: Props) {
               ? "text-green-500"
               : "text-orange-500"
           }`}
-          >
-            {project.projectStatus}
-          </span>
+            >
+              {project.projectStatus}
+            </p>
+          </div>
         </div>
       </div>
 
